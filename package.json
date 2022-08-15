@@ -1,0 +1,11 @@
+{
+    "name": "hightechx",
+    "version": "1.0.0",
+    "description": "Auto-Avaliação do processo seletivo Hightechx em ago/2022",
+    "main": "index.js",
+    "scripts": {
+        "test": "npm test"
+    },
+    "author": "Artur Bacilla",
+    "license": "ISC"
+}

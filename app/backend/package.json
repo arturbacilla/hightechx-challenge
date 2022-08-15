@@ -1,0 +1,26 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "4.17.1",
+        "http-status-codes": "^2.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "mysql2": "^2.1.0",
+        "sequelize": "^6.21.3"
+    },
+    "devDependencies": {
+        "eslint": "^8.22.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "nodemon": "^2.0.15",
+        "sequelize-cli": "6.2.0"
+    }
+}
