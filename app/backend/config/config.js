@@ -2,24 +2,27 @@ require('dotenv').config();
 
 module.exports = {
   development: {
+    host: process.env.HOSTNAME,
+    port: process.env.DB_PORT,
+    database: 'hightechx_db',
+    dialect: 'mysql',
     username: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
-    database: 'hightechx_db',
-    host: process.env.HOSTNAME,
-    dialect: 'mysql',
   },
   test: {
+    host: process.env.HOSTNAME,
+    port: process.env.DB_PORT,
+    database: 'hightechx_db',
+    dialect: 'mysql',
     username: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
-    database: 'hightechx_db',
-    host: process.env.HOSTNAME,
-    dialect: 'mysql',
   },
   production: {
+    host: process.env.HOSTNAME,
+    port: process.env.DB_PORT,
+    database: 'hightechx_db',
+    dialect: 'mysql',
     username: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
-    database: 'hightechx_db',
-    host: process.env.HOSTNAME,
-    dialect: 'mysql',
   },
 };
