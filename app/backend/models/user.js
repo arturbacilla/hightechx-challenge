@@ -10,12 +10,23 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     cpf: DataTypes.STRING,
     phone: DataTypes.STRING,
-    birthdate: DataTypes.DATE,
+    birthdate: DataTypes.DATEONLY,
     status: DataTypes.STRING,
+    createdAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
+      allowNull: false,
+    },
+    updatedAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
+      allowNull: false,
+    },
   }, {
     sequelize,
     modelName: 'User',
     tableName: 'Users',
+    timestamps: true,
   });
   return User;
 };

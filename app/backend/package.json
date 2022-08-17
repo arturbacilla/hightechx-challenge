@@ -7,6 +7,7 @@
         "start": "node index.js",
         "drop": "npx sequelize-cli db:drop $",
         "seed": "npx sequelize-cli db:seed:all $",
+        "setdb": "npm run drop && npx sequelize db:create && npx sequelize db:migrate && npm run seed",
         "debug": "nodemon index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
