@@ -18,3 +18,7 @@ app.get('/', (_request, response) => {
 });
 app.post('/login', login);
 app.post('/user', User.createUser);
+app.get('/user', User.readUsers);
+app.get('/user/:id', User.readUser);
+app.put('/user/:id', User.editUser);
+app.delete('/user/:id', User.deleteUser);
