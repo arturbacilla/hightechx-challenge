@@ -25,7 +25,20 @@ export const executeGet = async (endpoint, token) => {
     })
     return result.data
   } catch (error) {
-    
+    console.log(error);
+  }
+}
+
+export const executePost = async (endpoint, body, token) => {
+  try {
+    const result = await api.post(endpoint, body, {
+      headers: {
+        authorization: token
+      }
+    })
+    return result.data
+  } catch (error) {
+    console.log(error);
   }
 }
 
